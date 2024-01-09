@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J|C | Art Portfolio</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <script src="https://kit.fontawesome.com/fdd73ab055.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Add your custom styles here */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            flex-grow: 1;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: #fff;
+        }
+
+        .landing-image {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .text-overlay h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .text-overlay p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .text-overlay a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #social-networks {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        #social-networks li {
+            margin: 0 10px;
+        }
+
+        #social-networks a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--navigation-->
+    <header>
+        <div class="logo">
+            <h1>J|C</h1>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a href="contact">Contact</a>
+                <a href="gallery">Gallery</a>
+                <a href="about">About Us</a>
+                <a class="active" href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="landing-image">
+            <!-- Clickable image with text overlay -->
+            <div class="text-overlay">
+                <h2>Artistic Freedom by Justin Case</h2>
+                <p>Discover amazing features right here.</p>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
+            <img src="assets/images/colors.png" alt="Landing Image">
+        </div>
+    </section>
+
+    <footer>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Visit our LinkedIn page (opens in a new tab)">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
